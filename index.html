@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The game</title>
+    <link rel="stylesheet" href="game.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+   <!--     <figure>
+            <img src="./back1.jpeg" alt="Fondo">
+        </figure>
+    -->
+    <div id="animatedBackground"></div>
+        <div id="dino">
+            <figure>
+                <img id="mario" src="./estatica.png" alt="avatar">
+            </figure>
+        </div>
+
+        <div id="enemy">
+            <figure>
+                <img id="enemigo" src="./enemi.png" alt="enemigo">
+            </figure>
+        </div>
+
+
+        <div id="inicio">
+            <p>Da clic para comenzar</p>
+        </div>
+
+        <div id="score">
+            <p class="puntos">
+                Score <span id="i">0</span>
+            </p>
+        </div>
+    
+
+    </div>
+    <button id="stop">Pausa</button>
+    <button id="play">Play</button>
+    <div id="Win">YOU WIN!!</div>
+
+    <div id="lose">YOU LOSE!!</div>
+
+   <!-- <audio  id="song" src="./Sad.wav" type="audio/wav" autoplay="true"></audio>-->
+
+    <script src="./game.js"></script>
+
+  
+</body>
+</html>

@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Emulator;
+}
+
+@font-face {
+
+    font-family: Emulator;
+    
+    src: url(./pixel_emulator/Pixel\ Emulator.otf);
+    
+    }
+
+#inicio{
+    background-color: rgb(240, 248, 255, .5);
+    border: solid black 2px;
+    height: 150px;
+    text-align: center;
+    position: relative;
+    width: 50%;
+    height: 30%;
+    margin: auto;
+    top: 100px;
+    display: block;
+}   
+
+#inicio p{
+    font-size: 18px;
+    margin: auto;
+    display: block;
+    margin-top: 40px;
+}
+
+#container{
+    border: solid black 4px;
+    border-radius: 3px;
+    width: 100%;
+    height: 400px;
+}
+
+/*#container figure img{
+    width: 100%;
+    height: 394px;
+}
+*/
+
+#dino {
+    height: 15%;
+    width: 8%;
+    position: absolute;
+    top: 34%;
+}
+
+#dino figure{
+    height: 100%;
+    width: 100%;
+}
+
+
+#dino figure img{
+    height: 100px;
+    width: 120px;
+    position: absolute;
+
+}
+
+
+#score{
+    position: fixed;
+    top: 10px;
+    left: 150px;
+    font-size: 22px;
+}
+
+
+
+
+
+#animatedBackground {
+    width: 100%;
+    height: 49.8%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("./back1.jpeg");
+    background-repeat: repeat;
+    background-position: 0 0;
+    background-size: auto 100%;
+    /*adjust s value for speed*/
+    animation: animatedBackground 70s linear infinite;
+  }
+  
+  @keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+  /*use negative width if you want it to flow right to left else and positive for left to right*/
+    to {
+      background-position: -10000px 0;
+    }
+  }
+
+  #stop{
+      margin-top: 60px;
+      margin-left: 40px;
+      width: 15%;
+      height: 40px;
+  }
+
+  #play{
+    margin-top: 60px;
+    margin-left: 40px;
+    width: 15%;
+    height: 40px;
+    display: none;
+  }
+
+  #Win{
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    height: 451px;
+    position: absolute;
+    margin-top: -400px;
+    background-color: rgb(150, 151, 151, .5);
+    text-align: center;
+    line-height: 400px;
+    font-size: 30px;
+    display: none;
+  }
+
+  #lose{
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    height: 480px;
+    position: absolute;
+    margin-top: -430px;
+    background-color: rgb(150, 151, 151, .5);
+    text-align: center;
+    line-height: 590px;
+    font-size: 30px;
+    display: none;
+  }
+
+
+
+
+#enemy{
+    height: 15%;
+    width: 8%;
+    position: absolute;
+    right: 0px;
+    top: 36%;
+    animation: 3s enemi infinite;
+    border-radius: 30px;
+    
+}
+
+#enemy #enemigo{
+    height: 70%;
+    width: 100%;
+}
+
+
+#enemy figure img{
+    height: 50px;
+    width: 120px;
+    position: absolute;
+
+
+}
+
+
+@keyframes enemi {
+    0%{
+        right: -10%;
+    }
+    100%{
+        right: 120%;
+    }
+    
+}
